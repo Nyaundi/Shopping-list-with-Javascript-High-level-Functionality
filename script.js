@@ -1,17 +1,30 @@
-// //DOM
-// console.dir(window.document)
+//Dom Manipulation 
 
-// console.log(document.body.innerHTML);
+let output;
 
-// console.log(document.links[0]);
+// output = document.all.length;
 
-// document.body.innerHTML = '<h1> I am in the DOM </h1>'
-// document.write('Hello for DOM')
+// output = document.documentElement;
 
-// Method to select HTML --Super Important
+// output = document.head;
+// output = document.body;
 
-console.log(document.getElementById('main'));
-const main = document.getElementById('main');
-// main.innerHTML = '<h1>Hello From Main</h1>'
+// output = document.head.children;
+// output = document.body.children;
 
-document.querySelector('#main h1').innerText = 'hello';
+// //output = document.doctype;
+output = document.doctype;
+output = document.URL;
+output = document.characterSet;
+
+output = document.forms[0];
+output = document.forms[0].id;
+output = document.forms[0].method;
+
+document.forms[0].id = 'new-id';
+
+output = document.forms.classList;
+
+output = document.images[0].src;
+
+console.log(output);
