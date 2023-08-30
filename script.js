@@ -1,32 +1,17 @@
-//KEYBOARD INPUTS
+// //DOM
+// console.dir(window.document)
 
+// console.log(document.body.innerHTML);
 
-// const itemInput = document.getElementById('Item-input');
+// console.log(document.links[0]);
 
-// const onKeyPress = (e) => {
-//     console.log('keypress');
-// };
+// document.body.innerHTML = '<h1> I am in the DOM </h1>'
+// document.write('Hello for DOM')
 
-// itemInput.addEventListener('keypress', onKeyPress);
+// Method to select HTML --Super Important
 
-const itemInput = document.getElementById('item-input');
+console.log(document.getElementById('main'));
+const main = document.getElementById('main');
+// main.innerHTML = '<h1>Hello From Main</h1>'
 
-const onKeyPress = (e) => {
-  console.log('keypress');
-};
-
-const onKeyUp = (e) => {
-    console.log('keyUp');
-};
-
-const onKeyDown = (e) => {
-    console.log('keyDown');
-};
-
-
-
-// itemInput.addEventListener('keypress', onKeyPress);
-
-// itemInput.addEventListener('keypress', onKeyUp);
-
-itemInput.addEventListener('keydown', onKeyDown);
+document.querySelector('#main h1').innerText = 'hello';
