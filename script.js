@@ -1,30 +1,42 @@
-// //Dom Manipulation 
+//Traversig the DOM - Element
 
-// let output;
+const listItems = document.querySelectorAll('.item');
 
-// // output = document.all.length;
+console.log(listItems[1].innerHTML);
 
-// // output = document.documentElement;
+listItems.forEach((item, index) => {
+    item.style.color = 'red';
 
-// // output = document.head;
-// // output = document.body;
+    if (index === 1) {
+        item.innerHTML = `paawpaw
+        <button class="remove-item btn-link text-red">
+        <i class="fa-solid fa-xmark"></i>
+      </button>`
+    }
 
-// // output = document.head.children;
-// // output = document.body.children;
+    if (index === 0 ){
+        item.innerHTML = `Amabere
+        <button class="remove-item btn-link text-red">
+        <i class="fa-solid fa-xmark"></i>
+      </button>`
+    }
 
-// // //output = document.doctype;
-// output = document.doctype;
-// output = document.URL;
-// output = document.characterSet;
+    if (index === 0) {
+        item.remove();
+    }
+});
 
-// output = document.forms[0];
-// output = document.forms[0].id;
-// output = document.forms[0].method;
+const modClear = document.querySelector('.btn-clear')
 
-// document.forms[0].id = 'new-id';
+console.log(modClear.innerText);
 
-// output = document.forms.classList;
+modClear.style.backgroundColor = ' #7b38d8 ';
+modClear.style.padding = '20px';
+modClear.style.width = '200px'
+modClear.style.display = 'inline-block';
 
-// output = document.images[0].src;
+const classFilter = document.querySelector('.filter');
 
-// console.log(output);
+console.log(classFilter);
+classFilter.style.backgroundColor = ' #7b38d8 ';
+classFilter.style.padding = '20px'
