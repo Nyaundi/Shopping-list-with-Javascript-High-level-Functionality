@@ -30,3 +30,29 @@
 //         a.style.background = 'Orange'
 //     }
 // })
+
+//Traversig the DOM - Elements\
+
+//Get child elements
+let output; 
+const parent =  document.querySelector('.parent');
+output = parent.children[1].innerText;
+output = parent.children[0].innerHTML;
+output = parent.children[1].className;
+output = parent.children[1].nodeName;
+
+parent.children[1].innerText = 'New child two'
+parent.children[1].style.backgroundColor = 'orange'
+
+parent.firstElementChild.innerText = 'changed'
+
+
+//Get parent elements from a child
+
+const child = document.querySelector('.child');
+
+output =  child.parentElement;
+
+console.log(output);
+
+//Traversing the DOM - NODES
